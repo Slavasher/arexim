@@ -1,0 +1,28 @@
+.address {
+  margin-top: 17px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  color: @black;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+
+  &:hover {
+    font-size: 20px;
+    transition: 1s;
+  }
+
+  &:hover .address__img {
+    clear: both;
+    transition: 1s;
+    transform: scale(1.2);
+  }
+}
+
+.address__item {
+  vertical-align: middle;
+  margin-right: 12px;
+}
+

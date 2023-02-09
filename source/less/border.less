@@ -1,0 +1,32 @@
+.border {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  &:hover .border__item {
+    transform: scale(1.2);
+    width: 60px;
+  }
+
+  &:hover .border__img {
+    height: 60px;
+    width: 60px;
+    transform: scale(1.2);
+    margin: 0 20px;
+  }
+}
+
+.border__item {
+  width: 130px;
+  height: 1px;
+  background-color: @gray;
+  margin: auto 0;
+  transition: 1s;
+}
+
+
+.border__img {
+  margin: 0 11px;
+  width: 50px;
+  height: 50px;
+  transition: 1s;
+}

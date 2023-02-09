@@ -1,0 +1,45 @@
+.arrow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 160px;
+  margin-top: 50px;
+}
+
+.arrow__block {
+  margin-right: 20px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+}
+
+.arrow__img--left {
+  background: url("../icons/arrow__left.png");
+  width: 48px;
+  height: 48px;
+
+  &:focus {
+    background-image: url("../icons/arrow__left__active.png");
+  }
+
+  &:hover {
+    background-image: url("../icons/arrow__left__active.png");
+  }
+}
+
+.arrow__img--right {
+  background: url("../icons/arrow__right.png");
+  width: 48px;
+  height: 48px;
+
+  &:focus {
+    background-image: url("../icons/arrow__right__active.png");
+  }
+
+  &:hover {
+    background-image: url("../icons/arrow__right__active.png");
+  }
+}
+
