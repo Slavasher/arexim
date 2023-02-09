@@ -9,40 +9,47 @@
   align-items: center;
 
 }
-.tabcontent__item{
+
+.tabcontent__item {
   display: flex;
- margin: 0 auto;
+  margin: 0 auto;
   width: 1000px;
   justify-content: space-between;
 
 }
-.tabcontent__descr--left{
+
+.tabcontent__descr--left {
   height: 93px;
   margin-top: 17px;
 }
-.tabcontent__descr--right{
+
+.tabcontent__descr--right {
   height: 128px;
 }
+
 .tabcontent__descr {
+  position: relative;
+  display: flex;
   max-width: 428px;
   width: 100%;
-  display: flex;
-  position: relative;
 }
 
 .tabcontent__svg {
   position: absolute;
   top: 17%;
   left: 1%;
+
   &:hover {
     transform: scale(1.2);
     transition: transform .7s;
   }
 }
-.tabcontent__block{
+
+.tabcontent__block {
   position: absolute;
   left: 27%;
 }
+
 .tabcontent__header {
   margin: 0;
 }
