@@ -423,22 +423,6 @@
 .brands--nissens {
   background-image: url("../icons/nissens.png");
 }
-@font-face {
-  font-family: 'Onest';
-  src: url("source/fonts/OFL.txt");
-  src: url("source/fonts/WOFF"), url("source/fonts/WOFF/OnestRegular1602-hint.woff"), url("source/fonts/WOFF/OnestBlack1602-hint.woff"), url("source/fonts/WOFF/OnestThin1602-hint.woff"), url("source/fonts/WOFF/OnestLight1602-hint.woff"), url("source/fonts/WOFF/OnestMedium1602-hint.woff"), url("source/fonts/WOFF/OnestBold1602-hint.woff"), url("source/fonts/WOFF/OnestExtraBold1602-hint.woff");
-  src: url("source/fonts/TTF"), url("source/fonts/TTF/OnestBlack1602-hint.ttf"), url("source/fonts/TTF/OnestBold1602-hint.ttf"), url("source/fonts/TTF/OnestExtraBold1602-hint.ttf"), url("source/fonts/TTF/OnestLight1602-hint.ttf"), url("source/fonts/TTF/OnestMedium1602-hint.ttf"), url("source/fonts/TTF/OnestRegular1602-hint.ttf"), url("source/fonts/TTF/OnestThin1602-hint.ttf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-ExtraBold.otf"), url("../fonts/Gilroy-Light.otf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 div {
   font-family: 'Onest', sans-serif;
 }
