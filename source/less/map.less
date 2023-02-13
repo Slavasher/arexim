@@ -1,11 +1,26 @@
 .map {
   position: relative;
-  width: 810px;
   background-image: url("../icons/basemapp.jpg");
+  height: 400px;
+
+  @media (min-width: @tablet-width) {
+    width: 810px;
+    height: auto;
+  }
 }
 
 .map__flag {
   position: absolute;
-  right: 45%;
-  top: 26%;
+  right: 41%;
+  top: 12%;
+
+  @media (min-width: @tablet-width) {
+    right: 45%;
+    top: 26%;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 44.8%;
+    top: 26.8%;
+  }
 }

@@ -1,26 +1,43 @@
 .preview {
-  width: 480px;
+  @media (min-width: @desktop-width) {
+    width: 480px;
+  }
 }
 
 .preview__text__title {
   color: @white;
   font-style: normal;
   font-weight: 500;
-  font-size: 86px;
+  font-size: 28px;
   line-height: 110%;
   margin: 0;
-  margin-top: 26%;
+  margin-top: 27%;
   margin-bottom: 29px;
-  height: 285px;
+  height: 145px;
   letter-spacing: 5px;
+
+  @media (min-width: @tablet-width) {
+    height: 220px;
+    font-size: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 285px;
+    font-size: 86px;
+    max-width: 1440px;
+  }
 }
 
 .preview__text {
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   color: @white;
   margin: 0;
   line-height: 35px;
   letter-spacing: 0.4px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 22px;
+  }
 }

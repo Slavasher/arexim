@@ -1,8 +1,12 @@
 .descr {
+  width: 100%;
   margin: 0 auto;
-  width: 750px;
-  text-align: center;
   margin-bottom: 55px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 750px;
+  }
 }
 
 .descr__title {
@@ -10,7 +14,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 46px;
-  line-height: 140%;
+  line-height: 139%;
   margin: 0;
 }
 
@@ -18,5 +22,5 @@
   margin: 0;
   margin-top: 34px;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 23px;
 }

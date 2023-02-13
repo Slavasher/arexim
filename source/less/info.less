@@ -1,53 +1,108 @@
 .info {
-  display: flex;
-  max-width: 1440px;
+  display: grid;
   margin: 0 auto;
-  height: 540px;
+  height: 650px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    height: 540px;
+    max-width: 1440px;
+  }
 }
 
 .info__contact__top {
   position: absolute;
-  width: 239px;
-  height: 53px;
-  right: 0;
+  width: 150px;
+  height: 45px;
+  top: 75px;
+  left: 10%;
   cursor: pointer;
   background-color: @black;
   border-radius: 12px;
+
+  @media (min-width: @tablet-width) {
+    width: 239px;
+    height: 53px;
+    right: 0;;
+    top: 60px;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 56%;
+    top: 0;
+  }
 }
 
 .info__block {
-  position: relative;
-  max-width: 630px;
   width: 100%;
   background-color: @gray2;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    max-width: 630px;
+  }
 }
 
 .info__item {
   display: grid;
-  position: absolute;
   align-content: center;
   left: 21%;
   top: 24%;
-  width: 280px;
   height: 270px;
+  margin: 0 auto;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    width: 280px;
+  }
 }
 
 .info__logo {
-  position: absolute;
+  width: 120px;
   top: 0;
+  height: 57px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    width: 242px;
+  }
 }
 
 .info__contact {
   display: grid;
-  position: absolute;
   max-height: 145px;
   bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+  }
+}
+
+.info__img {
+  @media (max-width: @mobile-width) {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.info__img--top {
+  margin-top: 0;
+  width: 18px;
+  height: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -7px;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .info__text {
   text-decoration: none;
   color: @black;
-  font-size: 18px;
+  font-size: 11px;
   height: 20px;
   margin-bottom: 42px;
   transition: 0.5s;
@@ -64,11 +119,20 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .info__text--top {
   position: absolute;
   color: @white;
-  bottom: 12px;
-  left: 30px;
+  bottom: 15px;
+  left: 16px;
+
+  @media (min-width: @tablet-width) {
+    left: 30px;
+    bottom: 12px;
+  }
 }
