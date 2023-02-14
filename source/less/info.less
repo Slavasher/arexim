@@ -102,7 +102,7 @@
 .info__text {
   text-decoration: none;
   color: @black;
-  font-size: 11px;
+  font-size: 18px;
   height: 20px;
   margin-bottom: 42px;
   transition: 0.5s;
@@ -119,20 +119,29 @@
   &:last-child {
     margin-bottom: 0;
   }
-
-  @media (min-width: @tablet-width) {
-    font-size: 18px;
-  }
 }
 
 .info__text--top {
+  text-decoration: none;
   position: absolute;
   color: @white;
-  bottom: 15px;
-  left: 16px;
+  bottom: 12px;
+  left: 9px;
+  font-size: 13px;
+  height: 20px;
 
   @media (min-width: @tablet-width) {
     left: 30px;
-    bottom: 12px;
+    font-size: 18px;
+    transition: 0.5s;
+
+    &:hover {
+      font-size: 20px;
+    }
+
+    &:hover .info__img {
+      clear: both;
+      transform: scale(1.1);
+    }
   }
 }

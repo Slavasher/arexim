@@ -1,25 +1,49 @@
 .brands {
+  max-width: 1200px;
   margin: 0 auto;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.brands__icon {
+  display: flex;
   margin-bottom: 109px;
   margin-top: 68px;
-  max-width: 1200px;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+.brands__slider {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .brands__block {
   margin: 0 auto;
+  overflow: hidden;
+  max-width: 300px;
+  justify-content: center;
 }
+
+.swiper-button-prev {
+  display: none;
+}
+
 
 .brands--little {
   width: 180px;
   height: 148px;
+  margin: 0 auto;
 }
 
 .brands--large {
   width: 280px;
   height: 148px;
+  margin: 0 auto;
 }
 
 .brands--mann {

@@ -6,6 +6,7 @@
   <title>Arexim</title>
   <link href="./css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
 </head>
 <body class="index">
 <header>
@@ -128,7 +129,7 @@
   <section>
 
     <div class="carousel">
-      <div class="swiper mySwiper">
+      <div class="swiper mySwipers">
         <div class=" swiper__item swiper-wrapper ">
           <div class=" swiper-slide">
             <img class="swiper__img" src="icons/volvo.png" alt="volvo">
@@ -218,42 +219,92 @@
     </div>
   </section>
   <section>
-    <div class="brands">
-      <div class="brands__block">
-        <div class="brands--little brands--mann"></div>
-        <div class="brands--little brands--cei "></div>
-        <div class="brands--little brands--kmp"></div>
-        <div class="brands--little brands--sachs"></div>
-        <div class="brands--little brands--hengst"></div>
-      </div>
-
-      <div class="brands__block">
-        <div class="brands--large brands--wabco"></div>
-        <div class="brands--large  brands--euroricambi"></div>
-        <div class="brands--large brands--federal"></div>
-        <div class="brands--large brands--victor"></div>
-        <div class="brands--large brands--mahle"></div>
-      </div>
-      <div class="brands__block">
-        <div class="brands--little brands--valeo"></div>
-        <div class="brands--little brands--luk"></div>
-        <div class="brands--little brands--lema"></div>
-        <div class="brands--little brands--elring"></div>
-        <div class="brands--little brands--miba"></div>
-      </div>
-      <div class="brands__block">
-        <div class="brands--large brands--monroe"></div>
-        <div class="brands--large brands--kolbenschmidt"></div>
-        <div class="brands--large brands--knorr"></div>
-        <div class="brands--large brands--oe"></div>
-        <div class="brands--large brands--saf"></div>
-      </div>
-      <div class="brands__block">
-        <div class="brands--little brands--fag"></div>
-        <div class="brands--little brands--cummins"></div>
-        <div class="brands--little brands--jost"></div>
-        <div class="brands--little brands--remy"></div>
-        <div class="brands--little brands--nissens"></div>
+    <swiper-container class="mySwiper brands__slider" pagination="true" pagination-clickable="true" navigation="true"
+                      space-between="5" centered-slides="true" autoplay-delay="3000"
+                      autoplay-disable-on-interaction="false">
+      <swiper-slide>
+        <div class="brands__block ">
+          <div class="brands--little brands--mann"></div>
+          <div class="brands--little brands--cei "></div>
+          <div class="brands--little brands--kmp"></div>
+          <div class="brands--little brands--sachs"></div>
+          <div class="brands--little brands--hengst"></div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="brands__block ">
+          <div class="brands--large brands--wabco"></div>
+          <div class="brands--large  brands--euroricambi"></div>
+          <div class="brands--large brands--federal"></div>
+          <div class="brands--large brands--victor"></div>
+          <div class="brands--large brands--mahle"></div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="brands__block ">
+          <div class="brands--little brands--valeo"></div>
+          <div class="brands--little brands--luk"></div>
+          <div class="brands--little brands--lema"></div>
+          <div class="brands--little brands--elring"></div>
+          <div class="brands--little brands--miba"></div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="brands__block ">
+          <div class="brands--large brands--monroe"></div>
+          <div class="brands--large brands--kolbenschmidt"></div>
+          <div class="brands--large brands--knorr"></div>
+          <div class="brands--large brands--oe"></div>
+          <div class="brands--large brands--saf"></div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="brands__block ">
+          <div class="brands--little brands--fag"></div>
+          <div class="brands--little brands--cummins"></div>
+          <div class="brands--little brands--jost"></div>
+          <div class="brands--little brands--remy"></div>
+          <div class="brands--little brands--nissens"></div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+    <div class="brands  ">
+      <div class="brands__icon  ">
+        <div class="brands__block ">
+          <div class="brands--little brands--mann"></div>
+          <div class="brands--little brands--cei "></div>
+          <div class="brands--little brands--kmp"></div>
+          <div class="brands--little brands--sachs"></div>
+          <div class="brands--little brands--hengst"></div>
+        </div>
+        <div class="brands__block ">
+          <div class="brands--large brands--wabco"></div>
+          <div class="brands--large  brands--euroricambi"></div>
+          <div class="brands--large brands--federal"></div>
+          <div class="brands--large brands--victor"></div>
+          <div class="brands--large brands--mahle"></div>
+        </div>
+        <div class="brands__block ">
+          <div class="brands--little brands--valeo"></div>
+          <div class="brands--little brands--luk"></div>
+          <div class="brands--little brands--lema"></div>
+          <div class="brands--little brands--elring"></div>
+          <div class="brands--little brands--miba"></div>
+        </div>
+        <div class="brands__block ">
+          <div class="brands--large brands--monroe"></div>
+          <div class="brands--large brands--kolbenschmidt"></div>
+          <div class="brands--large brands--knorr"></div>
+          <div class="brands--large brands--oe"></div>
+          <div class="brands--large brands--saf"></div>
+        </div>
+        <div class="brands__block ">
+          <div class="brands--little brands--fag"></div>
+          <div class="brands--little brands--cummins"></div>
+          <div class="brands--little brands--jost"></div>
+          <div class="brands--little brands--remy"></div>
+          <div class="brands--little brands--nissens"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -308,6 +359,7 @@
     </div>
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="js/index.js"></script>
 </body>

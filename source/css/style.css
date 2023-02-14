@@ -163,23 +163,32 @@
 }
 .tabcontent {
   display: flex;
-  margin: 138px auto;
+  margin: 85px auto;
   margin-bottom: 129px;
-  height: 308px;
+  height: 330px;
   max-width: 1182px;
   background-color: #F5F6F8;
   border-radius: 20px;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .tabcontent {
+    margin: 136px auto;
+    margin-bottom: 129px;
+    height: 311px;
+  }
+}
 .tabcontent__item {
   display: grid;
   margin: 0 auto;
   justify-content: space-between;
+  padding: 0 20px;
 }
 @media (min-width: 768px) {
   .tabcontent__item {
     display: flex;
     width: 1000px;
+    padding: 0;
   }
 }
 .tabcontent__descr--left {
@@ -405,7 +414,7 @@
 .info__text {
   text-decoration: none;
   color: #1B202D;
-  font-size: 11px;
+  font-size: 18px;
   height: 20px;
   margin-bottom: 42px;
   transition: 0.5s;
@@ -420,21 +429,27 @@
 .info__text:last-child {
   margin-bottom: 0;
 }
-@media (min-width: 768px) {
-  .info__text {
-    font-size: 18px;
-  }
-}
 .info__text--top {
+  text-decoration: none;
   position: absolute;
   color: #FFFFFF;
-  bottom: 15px;
-  left: 16px;
+  bottom: 12px;
+  left: 9px;
+  font-size: 13px;
+  height: 20px;
 }
 @media (min-width: 768px) {
   .info__text--top {
     left: 30px;
-    bottom: 12px;
+    font-size: 18px;
+    transition: 0.5s;
+  }
+  .info__text--top:hover {
+    font-size: 20px;
+  }
+  .info__text--top:hover .info__img {
+    clear: both;
+    transform: scale(1.1);
   }
 }
 .map {
@@ -534,24 +549,45 @@
   background-image: url("../icons/arrow__right__active.png");
 }
 .brands {
+  max-width: 1200px;
   margin: 0 auto;
+  display: none;
+}
+@media (min-width: 768px) {
+  .brands {
+    display: block;
+  }
+}
+.brands__icon {
+  display: flex;
   margin-bottom: 109px;
   margin-top: 68px;
-  max-width: 1200px;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  .brands__slider {
+    display: none;
+  }
+}
 .brands__block {
   margin: 0 auto;
+  overflow: hidden;
+  max-width: 300px;
+  justify-content: center;
+}
+.swiper-button-prev {
+  display: none;
 }
 .brands--little {
   width: 180px;
   height: 148px;
+  margin: 0 auto;
 }
 .brands--large {
   width: 280px;
   height: 148px;
+  margin: 0 auto;
 }
 .brands--mann {
   background-image: url("../icons/mann_filter.png");
