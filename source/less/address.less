@@ -9,20 +9,22 @@
   font-weight: 400;
   font-size: 12px;
 
-  &:hover {
-    font-size: 20px;
-    transition: 1s;
-  }
-
-  &:hover .address__img {
-    clear: both;
-    transition: 1s;
-    transform: scale(1.2);
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 18px;
     left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    &:hover {
+      font-size: 20px;
+      transition: 1s;
+    }
+
+    &:hover .address__img {
+      clear: both;
+      transition: 1s;
+      transform: scale(1.2);
+    }
   }
 }
 

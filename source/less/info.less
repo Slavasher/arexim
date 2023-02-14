@@ -91,9 +91,9 @@
   margin-top: 2px;
   width: 18px;
   height: 18px;
+  transition: 1s;
 
   @media (min-width: @tablet-width) {
-
     margin-top: -7px;
     width: 24px;
     height: 24px;
@@ -108,17 +108,19 @@
   margin-bottom: 42px;
   transition: 0.5s;
 
-  &:hover {
-    font-size: 20px;
-  }
-
-  &:hover .info__img {
-    clear: both;
-    transform: scale(1.1);
-  }
-
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    &:hover {
+      font-size: 20px;
+    }
+
+    &:hover .info__img {
+      clear: both;
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -146,7 +148,9 @@
     font-size: 18px;
     transition: 0.5s;
     bottom: 12px;
+  }
 
+  @media (min-width: @desktop-width) {
     &:hover {
       font-size: 20px;
     }
